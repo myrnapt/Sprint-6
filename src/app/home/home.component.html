@@ -1,1 +1,12 @@
-<app-escena [Story]="Story"></app-escena>
+<body>
+  <div>
+    <ng-template [ngIf]="startAdventure">
+      <app-escena [Story]="Story"></app-escena>
+    </ng-template>
+
+    <ng-template [ngIf]="hideHome">
+      <h1>Vols viure una aventura?</h1>
+      <button class="button" (click)="startButton()">Comencem</button>
+    </ng-template>
+  </div>
+</body>

@@ -16,4 +16,11 @@ export class HomeComponent {
     "Mentrestant, altres heroes no van tenir tanta sort en la seva elecció ..."
   ];
   
+   startAdventure: boolean = false
+   hideHome: boolean = true
+ 
+  startButton() {
+    this.startAdventure = true
+    this.hideHome = false
+  }
 }

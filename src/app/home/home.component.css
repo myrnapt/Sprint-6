@@ -1,0 +1,63 @@
+h1 {
+  padding: 0;
+  margin-top: 300px;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  height: auto;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #b0a7a7;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  box-shadow: rgba(87, 87, 87, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  color: #3c4043;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  height: 50px;
+  width: 15%;
+  margin: 0 auto;
+}
+
+.button:hover {
+  background-color: rgb(240, 176, 230);
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
