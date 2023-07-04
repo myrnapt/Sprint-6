@@ -1,5 +1,6 @@
 export interface story {
-  [index: number]: string;
+  txt: string;
+  img: string;
   }
 
   

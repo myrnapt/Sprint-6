@@ -1,16 +1,21 @@
-
 <div class="center">
   <ul class="list-group">
-    <li class="list-group-item" 
-    *ngFor="let sentence of Story; let i = index"
-    [ngClass]="{selected: currentSentence ===  i }"> 
-    {{ sentence }} 
-  </li>
-</ul>
+    <li
+      class="list-group-item"
+      *ngFor="let sentence of Story; let i = index"
+      [ngClass]="{ selected: currentSentence === i }"
+    >
+      {{ sentence.txt }}
+    </li>
+  </ul>
 </div>
 
 <div class="center">
-  <button (click)='buttonPrev()' class="buttons"> Anterior </button> 
-  <button (click)="buttonNext()"class="buttons"> Següent </button>
+  <button (click)="buttonPrev()" class="buttons">Anterior</button>
+  <button (click)="buttonNext()" class="buttons">Següent</button>
 </div>
 
+<div
+  class="background-image"
+  [ngStyle]="{ 'background-image': 'url(' + Story[currentSentence].img + ')' }"
+></div>

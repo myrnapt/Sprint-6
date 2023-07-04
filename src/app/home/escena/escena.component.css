@@ -2,15 +2,17 @@
   padding: 0;
   margin-top: 20px;
   align-items: center;
-  background-color: rgb(124,78,251, 0.5);
+  background-color: rgb(124, 78, 251, 0.5);
   border-radius: 24px;
-  box-shadow: rgba(0, 0, 0, .1) 0 3px 5px -1px,rgba(0, 0, 0, .1) 0 6px 10px 0,rgba(0, 0, 0, .1) 0 1px 18px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 5px -1px, rgba(0, 0, 0, 0.1) 0 6px 10px 0,
+    rgba(0, 0, 0, 0.1) 0 1px 18px 0;
   box-sizing: border-box;
-  color: #3c4043;
-  display:inline-block;
+  color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
   font-size: 15px;
   font-weight: 500;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   height: auto;
   justify-content: center;
   width: 100%;
@@ -24,30 +26,29 @@
 }
 
 .selected {
-  background-color: rgb(124,78,251, 1);
+  background-color: rgb(124, 78, 251, 1);
   color: aliceblue;
 }
 
-
-.buttons{
+.buttons {
   display: inline-block;
-  border: 1px solid #b0a7a7;
+  border: 1px solid #121010;
   margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 25px;
-  box-shadow: rgba(87, 87, 87, 0.2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-shadow: rgba(87, 87, 87, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
   box-sizing: border-box;
   color: #3c4043;
   font-size: 14px;
   font-weight: 500;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   height: 50px;
   position: relative;
   width: 30%;
   margin-right: 5px;
-  
 }
-
 
 .buttons:hover {
   background-color: rgb(240, 176, 230);
@@ -55,12 +56,22 @@
 }
 
 .center {
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
 }
 
 ul {
   padding-inline: 40px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-size: cover;
 }
